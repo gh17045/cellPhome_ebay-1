@@ -2,15 +2,23 @@
     width: 200px;
     height: 200px;
 }
-
 .card {
-    margin:0px auto
+    margin:0px auto;
+	align-items: center;
 }
-
+.footer {
+	background-color: #400D51;
+}
 .sidebar {
     margin-top: 6%;
 }
 
+.sidebar div {
+	background-color: #483838;
+}
+.btn-details {
+	background-color: #c9f42d;
+}
 .user .user_avatar img {
 	width: 40px;
 	height: 40px;
