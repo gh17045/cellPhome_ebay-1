@@ -1,3 +1,10 @@
 .btn-buy {
 	background-color: #c9f42d;
 }
+
+.carousel, .carousel-inner, .carousel-item, img{
+	height: 100%;
+}
+.carousel-inner{
+	height: 400px;
+}
