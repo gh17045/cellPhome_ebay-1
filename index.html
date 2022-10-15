@@ -81,128 +81,150 @@
 
 
 
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header" style="background-color: #000000">
-            <h5 class="modal-title" id="exampleModalToggleLabel" style="color: white;"><b>Informacion del dispositivo</b></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+            <h5 class="modal-title" id="exampleModalToggleLabel" style="color: white;"><b>Informacion del
+                dispositivo</b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              style="background-color: white;"></button>
           </div>
           <div class="modal-body">
-            
-            <div class="estado" style="display: flex;">
-              <h6>Estado : &nbsp; </h6>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">Nuevo </label>
+            <div class="row">
+              <div class="col-md-6 ms-auto">
+                <div class="estado" style="display: flex;">
+                  <h6>Estado : &nbsp; </h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Nuevo </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                      value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Usado</label>
+                  </div>
+                </div>
+                <br>
+                <div class="marca marca-sm-3" style="display: flex;">
+                  <h6>Marca : </h6>
+                  <input type="text" class="form-control " style="width: 250px; margin-left: 28px;">
+                </div>
+                <br>
+                <div class="modelo" style="display: flex;">
+                  <h6>Modelo : &nbsp; </h6>
+                  <input type="text" class="form-control " style="width: 250px; margin-left: 10px;">
+                </div>
+                <br>
+                <div class="pantalla" style="display: flex;">
+                  <h6>Pantalla : &nbsp; </h6>
+                  <input type="text" class="form-control " style="width: 250px; margin-left: 7px;">
+                </div>
+                <br>
+                <div class="system col-sm" style="display: flex;">
+                  <h6>Sistema: &nbsp; </h6>
+                  <select class="form-select form-select-sm" style="size: 14px; width: 250px; margin-left: 10px;"
+                    aria-label=".form-select-sm example">
+                    <option selected>Elige una opcion...</option>
+                    <option value="1">Android</option>
+                    <option value="2">IOS</option>
+                    <option value="3">Windows</option>
+                    <option value="4">Otro...</option>
+                  </select>
+                </div>
+                <br> <br>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">Usado</label>
-              </div>
-            </div>
-            <br>
-            <div class="marca marca-sm-3" style="display: flex;">
-              <h6>Marca :   </h6>
-              <input type="text" class="form-control " style="width: 250px; margin-left: 28px;" >
-            </div>
-            <br>
-            <div class="modelo" style="display: flex;">
-              <h6>Modelo : &nbsp;  </h6>
-              <input type="text" class="form-control " style="width: 250px; margin-left: 10px;" >
-            </div>
-            <br>
-            <div class="pantalla" style="display: flex;">
-              <h6>Pantalla : &nbsp;  </h6>
-              <input type="text" class="form-control " style="width: 250px; margin-left: 7px;" >
-            </div>
-            <br>
-            <div class="system col-sm" style="display: flex;">
-              <h6>Sistema: &nbsp;  </h6>
-              <select class="form-select form-select-sm" style="size: 14px; width: 250px; margin-left: 10px;" aria-label=".form-select-sm example">
-                <option selected>Elige una opcion...</option>
-                <option value="1">Android</option>
-                <option value="2">IOS</option>
-                <option value="3">Windows</option>
-                <option value="4">Otro...</option>
-              </select>
-            </div>
+              <div class="col-md-6 ms-auto">
+                <div class="titulo">
+                  <h6>Titulo del Anuncio : </h6>
+                  <input type="text" class="form-control " style="width: 100% margin-left: 28px;">
+                </div>
+                <br>
+                <div class="nombre" style="display: flex;">
+                  <h6>Nombre: </h6>
+                  <input type="text" class="form-control " style="width: 250px; margin-left: 28px;">
+                </div>
+                <br>
+                <div class="apellido" style="display: flex;">
+                  <h6>Apellido : </h6>
+                  <input type="text" class="form-control " style="width: 250px; margin-left: 28px;">
+                </div>
+                <br>
+                <div class="Tel" style="display: flex;">
+                  <h6>Telefono : </h6>
+                  <input type="text" class="form-control " style="width: 250px; margin-left: 28px;">
+                </div>
+                <br>
+                <div class="descrip">
+                  <h6>Descripción : </h6>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Siguiente</button>
-           
+                </div>
+              <br><br>
+              </div><!------------------------------------------>
+              <div class="row">
+
+                <div class="col-md-6 ms-auto">
+                  <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="captura()">Agregar</button>
+                  </div>
+                  <br>
+                    <br>
+                    <ul id="ul">
+                      
+                    </ul>
+                  <script>
+                    function captura (){
+                      const lista = document.querySelector("ul");
+                      let arr = [];
+                      
+                      var imag = document.getElementById("inputGroupFile04").value;
+                      console.log(imag);
+                      
+                      const newElem = document.createElement("li");
+                      newElem.classList.add("li");
+                      newElem.textContent = imag;
+                      document.querySelector("#ul").appendChild(newElem);
+                      var imag = document.getElementById("inputGroupFile04").value="";
+
+                    }
+                    
+                  </script>
+                </div>
+                <br>
+                <br>
+                <div class="col-md-6 ms-auto">
+                  <div class="precio" style="align-items: center;">
+                    <h6>Precio : </h6>
+                    <input type="text" class="form-control " style="width: 250px; margin-left: 28px;">
+                  </div>
+
+                  </button>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal">Siguiente</button>
+
+            </div>
           </div>
         </div>
       </div>
+     
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header" style="background-color: #000000">
-            <h5 class="modal-title" id="exampleModalToggleLabel2" style="color: white;"><b>Informacion del Vendedor</b></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
-          </div>
-          <div class="modal-body">
-           
-            <div class="titulo" >
-              <h6>Titulo del Anuncio :   </h6>
-              <input type="text" class="form-control " style="width: 100% margin-left: 28px;" >
-            </div>
-            <br>
-            <div class="nombre" style="display: flex;">
-              <h6>Nombre:   </h6>
-              <input type="text" class="form-control " style="width: 250px; margin-left: 28px;" >
-            </div>
-            <br>
-            <div class="apellido" style="display: flex;">
-              <h6>Apellido :   </h6>
-              <input type="text" class="form-control " style="width: 250px; margin-left: 28px;" >
-            </div>
-            <br>
-            <div class="Tel" style="display: flex;">
-              <h6>Telefono :   </h6>
-              <input type="text" class="form-control " style="width: 250px; margin-left: 28px;" >
-            </div>
-            <br>
-            <div class="descrip" >
-              <h6>Descripción :   </h6>
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              
-            </div>
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Siguiente</button>
-          </div>
-        </div>
-      </div>
-    </div>
+
     
-
-    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header" style="background-color: #000000">
-            <h5 class="modal-title" id="exampleModalToggleLabel2" style="color: white;"><b>Agregar Images</b></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
-          </div>
-          <div class="modal-body">
-            <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupFile01">Upload</label>
-              <input type="file" class="form-control" id="inputGroupFile01">
-            </div>
-           
-          </div>
-          <div class="modal-footer">
-            
-            <button class="btn btn-primary" data-bs-dismiss="modal" >Finalizar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+          
 
 
 
@@ -399,10 +421,10 @@
         <div class="col">
           <div class="user">
             <div class="user_avatar">
-              <img src="media/FOTO2.png" alt="Carlos Pacheco">
+              <img src="media/FOTO3.jpg" alt="Carlos Garcia">
             </div>
             <div class="user_info">
-              <span class="user_name orange">Carlos Alberto Pacheco Sánchez</span> • Sep 21, 2022<br>PS19001
+              <span class="user_name orange">Carlos Eduardo Garcia Hernandez</span> • Sep 21, 2022<br>GH17045
             </div>
           </div>
         </div>
